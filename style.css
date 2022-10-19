@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+*{
+    box-sizing: border-box;
+    /* margin: 0; */
+    padding: 0;
+
+}
+body{
+    margin: 0;
+    max-width: 100vw;
+    min-height: 100vh;
+    font-size: 20px;
+    font-family: 'Libre Franklin', sans-serif;
+    text-align: center;
+}
+.container{
+    width: 90%;
+    margin: 3em auto;
+    max-width: 600px;
+}
+header{
+    padding:1rem 0
+}
+
+.img_cont{
+    margin:4em 0;
+}
+
+.img_cont >img{
+    width:100%;
+
+}
+span{
+    color:rgba(0,0,0,.5);
+    font-weight: 300;
+}
+p{
+    font-size: .95rem;
+}
+input{
+    width:100%;
+    padding:.8rem 1.5rem;
+    border-radius: 50px;
+    border: 1px solid silver;
+    font-family: inherit;
+    outline: none;
+}
+button{
+    width:100%;
+    padding:.8rem;
+    border-radius: 50px;
+    margin-top:1rem;
+    border:none;
+    background-color: hsl(223, 87%, 63%);
+    color:white;
+    font-weight:600;
+    cursor: pointer;
+    letter-spacing: .6px;
+    font-family: inherit;
+    filter: drop-shadow(0 8px 4px hsl(223, 100%, 88%));
+    
+}
+#err_msg{
+    font-size: .8rem;
+    color: hsl(354, 100%, 66%);
+
+
+}
+
+.hide{
+    display: none;
+}
+
+button:hover{
+    background-color:hsl(209, 33%, 12%);
+    filter: drop-shadow(0 4px 2px hsl(209, 33%, 12%));
+}
+
+.icon{
+    border: 1px solid silver;
+    display: inline-block;
+    padding:1.1rem;
+    width:30px;
+    height: 30px;
+    border-radius: 20px;
+    color:hsl(223, 87%, 63%);
+    position: relative;
+
+
+}
+.icons{
+    margin:2em 0;
+}
+
+.fa{
+    position: absolute;
+    right: 8px;
+    top:8px;
+    cursor: pointer;
+    font-size: 1.3rem;
+}
+
+.icon:hover{
+    background-color: hsl(223, 87%, 63%);
+    color: white;
+}
+
+.icon + .icon{
+    margin-left:1.5rem;
+
+}
+.footer{
+    color:rgba(0,0,0,.5);
+    font-size: .95rem;
+
+}
+
+@media only screen and (min-width:700px){
+    .flex{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    input{
+        padding:.8rem;
+        margin-right:5px;
+        margin-top: 15px; 
+    }
+}
